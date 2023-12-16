@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:tag="termsConditions"
+    android:layout_width="match_parent"
+    android:paddingHorizontal="20dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".TermsConditionsFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <TextView
+            android:fontFamily="@font/urbanist_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:text="Tambah Produk"
+            android:layout_gravity="center"
+            android:textSize="23sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:orientation="vertical"
+        android:background="@drawable/layout_shape"
+        >
+        <TextView
+            android:fontFamily="@font/urbanist_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:text="Persyaratan Penjualan"
+            android:textSize="21sp"
+            />
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            >
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•  "/>
+                <TextView
+                    android:fontFamily="@font/urbanist_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#545F71"
+                    android:text="Barang yang akan dijual harus dalam keadaan sudah dicuci dengan baik."
+                    android:textSize="15sp"
+                    />
+            </TableRow>
+            <TableRow android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_column="1"
+                    android:text="•  "/>
+                <TextView
+                    android:fontFamily="@font/urbanist_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#545F71"
+                    android:text="Detail cacat atau kerusakan barang wajib dicantumkan dalam deskripsi produk.
+"
+                    android:textSize="15sp"
+                    />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/layout_shape"
+        >
+        <TextView
+            android:fontFamily="@font/urbanist_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:text="Langkah Penjualan"
+            android:textSize="21sp"
+            />
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            >
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="•  "/>
+                <TextView
+                    android:fontFamily="@font/urbanist_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#545F71"
+                    android:text="Barang yang akan dijual harus dalam keadaan sudah dicuci dengan baik."
+                    android:textSize="15sp"
+                    />
+            </TableRow>
+            <TableRow android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_column="1"
+                    android:text="•  "/>
+                <TextView
+                    android:fontFamily="@font/urbanist_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#545F71"
+                    android:text="Detail cacat atau kerusakan barang wajib dicantumkan dalam deskripsi produk.
+"
+                    android:textSize="15sp"
+                    />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="bottom|center"
+        android:orientation="vertical"
+        android:layout_height="fill_parent">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addProduct"
+            android:text="Tambah Produk"
+            android:visibility="visible"
+            android:fontFamily="@font/urbanist"
+            android:textFontWeight="600"
+            android:textSize="18sp"
+            app:cornerRadius="8dp"
+            android:paddingVertical="15dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/black"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+    </LinearLayout>
+
+</LinearLayout>

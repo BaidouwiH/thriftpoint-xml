@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingHorizontal="20dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".AddProductFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <TextView
+            android:fontFamily="@font/urbanist_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:text="Tambah Produk"
+            android:layout_gravity="center"
+            android:textSize="23sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:fontFamily="@font/urbanist_medium"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:text="Yuk, isi informasi produkmu!"
+        android:textSize="21sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/urbanist_medium"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:text="Foto Produk"
+        android:textSize="19sp"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_marginTop="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_add_24"
+        android:padding="50dp"
+        android:background="@drawable/btn_shape_6"
+        />
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/imageBtn"-->
+<!--        android:layout_marginTop="7dp"-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:src="@drawable/rectangle_568"-->
+<!--        android:scaleType="fitCenter"-->
+<!--        android:padding="0dp"-->
+<!--        android:background="@drawable/btn_shape_6"-->
+<!--        />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/urbanist_medium"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:text="Detail Produk"
+        android:textSize="19sp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name"
+        android:layout_marginTop="7dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxBackgroundColor="#F7F8F9"
+        android:layout_width="match_parent"
+        android:hint="Nama"
+        android:layout_height="wrap_content"
+        app:boxStrokeWidthFocused="1dp"
+        app:boxStrokeWidth="1dp"
+        style="@style/TextInputLayoutStyle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:fontFamily="@font/urbanist_medium"
+            android:textSize="18sp"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:layout_height="wrap_content"
+            android:paddingVertical="17dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/price"
+        android:layout_marginTop="7dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxBackgroundColor="#F7F8F9"
+        android:layout_width="match_parent"
+        android:hint="Harga"
+        android:layout_height="wrap_content"
+        app:boxStrokeWidthFocused="1dp"
+        app:boxStrokeWidth="1dp"
+        style="@style/TextInputLayoutStyle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:fontFamily="@font/urbanist_medium"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:imeOptions="actionNext"
+            android:layout_height="wrap_content"
+            android:paddingVertical="17dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/category"
+        android:layout_marginTop="7dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxBackgroundColor="#F7F8F9"
+        android:layout_width="match_parent"
+        android:hint="Kategori"
+        android:layout_height="wrap_content"
+        app:boxStrokeWidthFocused="1dp"
+        app:boxStrokeWidth="1dp"
+        style="@style/TextInputLayoutStyle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:fontFamily="@font/urbanist_medium"
+            android:textSize="18sp"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:layout_height="wrap_content"
+            android:paddingVertical="17dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/description"
+        android:layout_marginTop="7dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxBackgroundColor="#F7F8F9"
+        android:layout_width="match_parent"
+        android:hint="Deskripsi"
+        android:layout_height="wrap_content"
+        app:boxStrokeWidthFocused="1dp"
+        app:boxStrokeWidth="1dp"
+        style="@style/TextInputLayoutStyle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:inputType="textMultiLine"
+            android:fontFamily="@font/urbanist_medium"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="17dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="bottom|center"
+        android:orientation="horizontal"
+        android:layout_height="fill_parent">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addProduct"
+            android:text="Terbitkan"
+            android:visibility="visible"
+            android:fontFamily="@font/urbanist"
+            android:textFontWeight="600"
+            android:textSize="18sp"
+            app:cornerRadius="8dp"
+            android:paddingVertical="15dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/black"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+    </LinearLayout>
+
+</LinearLayout>

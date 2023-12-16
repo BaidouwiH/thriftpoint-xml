@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Beranda"
+        android:translationY="-12dp"
+        android:icon="@drawable/home_05"/>
+    <item
+        android:id="@+id/wishlist"
+        android:title="Wishlist"
+        android:translationY="-12dp"
+        android:icon="@drawable/heart"/>
+    <item
+        android:id="@+id/placeholder"
+        android:title="" />
+    <item
+        android:id="@+id/notification"
+        android:title="Notifikasi"
+        android:translationY="-12dp"
+        android:icon="@drawable/baseline_notifications_none_24"/>
+    <item
+        android:id="@+id/account"
+        android:title="Akun"
+        android:translationY="-12dp"
+        android:icon="@drawable/user_03"/>
+</menu>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EAEBE3"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="420dp"
+        android:layout_marginTop="50dp"
+        android:layout_height="420dp"
+        android:src="@drawable/img"
+        android:contentDescription=""
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:fontFamily="@font/urbanist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/masuk"
+        android:text="Masuk"
+        android:fontFamily="@font/urbanist"
+        android:textFontWeight="600"
+        android:textSize="18sp"
+        app:cornerRadius="8dp"
+        android:paddingVertical="15dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/black"
+        android:layout_marginHorizontal="30dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/daftar"
+        android:text="Daftar"
+        android:textSize="18sp"
+        android:fontFamily="@font/urbanist"
+        android:textFontWeight="600"
+        android:textColor="@color/black"
+        app:strokeColor="@color/black"
+        app:cornerRadius="8dp"
+        app:strokeWidth="2dp"
+        android:paddingVertical="15dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#EAEBE3"
+        android:layout_marginHorizontal="30dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+</LinearLayout>

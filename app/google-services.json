@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "973132840890",
+    "project_id": "klinikkulit-eb202",
+    "storage_bucket": "klinikkulit-eb202.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:973132840890:android:ebeb2c3e091ab045f5e783",
+        "android_client_info": {
+          "package_name": "com.example.klinikkulit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "973132840890-ophjhhq194fqu00mcn8lii6g3k2fh36j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6yNBmPOt6GxXkJ1dHJHND62RJORheHWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "973132840890-ophjhhq194fqu00mcn8lii6g3k2fh36j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:973132840890:android:764659ee167d0c0ef5e783",
+        "android_client_info": {
+          "package_name": "com.example.thriftpoint_xml"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "973132840890-ophjhhq194fqu00mcn8lii6g3k2fh36j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6yNBmPOt6GxXkJ1dHJHND62RJORheHWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "973132840890-ophjhhq194fqu00mcn8lii6g3k2fh36j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

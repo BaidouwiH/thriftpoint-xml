@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/flFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/coordinator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+    </FrameLayout>
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:layout_gravity="bottom"
+            app:fabCradleMargin="10dp"
+            app:fabAlignmentMode="center"
+            app:fabCradleRoundedCornerRadius="20dp"
+            app:fabCradleVerticalOffset="10dp">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/productDetailsBottomBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    >
+                    <ImageButton
+                        android:id="@+id/chat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/chat"
+                        android:padding="10dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/btn_shape_4"
+                        android:contentDescription="Back Button"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/buy"
+                        android:text="Beli"
+                        android:fontFamily="@font/urbanist"
+                        android:textFontWeight="600"
+                        android:textSize="18sp"
+                        app:cornerRadius="8dp"
+                        android:paddingVertical="10dp"
+                        android:textColor="#35C2C1"
+                        app:strokeColor="#35C2C1"
+                        app:strokeWidth="1dp"
+                        android:backgroundTint="@color/white"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="120dp"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/addToCart"
+                        android:text="+ Keranjang"
+                        android:fontFamily="@font/urbanist"
+                        android:textFontWeight="600"
+                        android:textSize="18sp"
+                        app:cornerRadius="8dp"
+                        android:paddingVertical="10dp"
+                        android:backgroundTint="@color/black"
+                        android:layout_height="wrap_content"
+                        android:layout_width="190dp"/>
+
+                </LinearLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cartBottomBar"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/urbanist"
+                    android:text="Total Harga"
+                    android:textSize="17sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/totalPrice"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/totalPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/urbanist_bold"
+                    android:text="price"
+                    android:textColor="#35C2C1"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buyNow"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="@font/urbanist"
+                    android:paddingVertical="10dp"
+                    android:text="Beli Sekarang"
+                    android:textFontWeight="600"
+                    android:textSize="18sp"
+                    app:cornerRadius="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/bottomNavigationView"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    app:backgroundTint="@color/white"
+                    app:itemIconTint="@color/bottom_nav_color"
+                    android:visibility="invisible"
+                    app:itemTextColor="@color/bottom_nav_color"
+                    app:labelVisibilityMode="labeled"
+                    app:layout_anchorGravity="bottom|center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:menu="@menu/bottom_nav_menu" />
+            </FrameLayout>
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:visibility="invisible"
+            android:contentDescription="@string/app_name"
+            app:backgroundTint="@color/black"
+            app:layout_anchor="@id/bottomAppBar"
+            app:srcCompat="@drawable/baseline_add_24"
+            app:tint="@color/white"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
